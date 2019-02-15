@@ -10,8 +10,12 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 const path = require("path");
 
-// connecting to our mongodb
-mongoose.connect("mongodb://localhost:27017/login", { useNewUrlParser: true });
+mongoose.connect(
+  `mongodb://${process.env.MONGO_USER}:${
+    process.env.MONGO_PASS
+  }@ds137255.mlab.com:37255/heroku_04wsqfc9`,
+  { useNewUrlParser: true }
+);
 
 // middleware
 app.use(express.static(path.join(__dirname, "/build")));
