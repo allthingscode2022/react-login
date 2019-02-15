@@ -4,7 +4,6 @@ import { persistStore, persistReducer } from "redux-persist";
 import localStorage from "redux-persist/lib/storage";
 import rootReducer from "./reducers";
 import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
 import { createBrowserHistory } from "history";
 import { routerMiddleware } from "connected-react-router";
 
