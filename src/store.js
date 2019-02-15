@@ -25,7 +25,7 @@ const middleware = [thunk, routerMiddleware(history)];
 // creating the store and exporting it
 export const store = createStore(
   persistedReducer,
-  composeWithDevTools(applyMiddleware(...middleware))
+  applyMiddleware(...middleware)
 );
 
 // persisting store and exporting it
