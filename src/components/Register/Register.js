@@ -45,7 +45,7 @@ class Register extends React.Component {
     // lifecycle method when our props change for this component
     componentDidUpdate(prevProps) {
         if (prevProps !== this.props) {
-            const { success, message } = this.props.authentication.register
+            const { register: { success, message } } = this.props.register
             if (success) {
                 this.setState(
                     {
