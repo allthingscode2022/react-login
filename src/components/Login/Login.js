@@ -30,7 +30,6 @@ class Login extends React.Component {
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
-    this.handleGoogleClick = this.handleGoogleClick.bind(this);
   }
 
   // lifecylce method typically used to make requests and setState
@@ -119,11 +118,6 @@ class Login extends React.Component {
     return valid;
   }
 
-  // redirects to google auth authentication
-  handleGoogleClick() {
-    window.location = "http://localhost:2000/user/google";
-  }
-
   // this method submits the form input values to the redux action method fetchUser
   handleFormSubmit(e) {
     e.preventDefault();
@@ -154,9 +148,6 @@ class Login extends React.Component {
     return (
       <div className='container my-5'>
         {successMessage || errorMessage}
-        <button className='btn btn-danger' onClick={this.handleGoogleClick}>
-          Google+
-        </button>
         <form onSubmit={this.handleFormSubmit}>
           <div className='form-group'>
             <Label message='email' />
