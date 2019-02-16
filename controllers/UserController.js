@@ -9,7 +9,6 @@ const jwt = require("jsonwebtoken");
 // passport for user login strategies / options
 const passport = require("passport");
 // loading passport strategies from config folder
-require("../config/strategies")(passport);
 require("../config/auth")(passport);
 
 /**
