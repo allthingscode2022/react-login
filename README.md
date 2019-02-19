@@ -1,8 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Login Web App
+## Login Web App
 
-## Available Scripts
+### Tech Stack
+
+HTML, CSS, Javascript, React, Redux, React Router Dom, Express, Mongoose, Bcrypt, Axios, Jsonwebtoken
+
+### Available Scripts
 
 In the project directory, you can run:
 
